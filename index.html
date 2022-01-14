@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Command Line</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="title">The Command Line</h1>
+            <p class="subtitle">Cheat Sheet</p>
+            <p class="summary">The <em>command line</em> is a text interface for the computer's operating system. To acces the command line, we use the terminal.</p>
+        </div>
+    </header>
+    <main>
+        <!------------ First table (Navigation Commads) ----------->
+        <article class="table">
+            <section class="navigation-tb">
+                <div class="table-title">
+                    <h2>For navigation</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <!-- Navigation headers -->
+                        <thead class="table-head">
+                           <tr>
+                               <th>Command</th>
+                               <th>What it does</th>
+                               <th>How to use it</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                             <!-- Print Working Directory -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >pwd</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>It outputs the name of the current working directory.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                             <!-- List command-->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >ls</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Lists all files and directories in the working directory.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Change Directory -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >cd</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Switches you into the directory you specify.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Make new Directory -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >mkdir</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>creates a new directory in the working directory.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Create new file -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >touch</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Creates a new file inside the working directory.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+        </article>
+        <!------------ Helper commands (Navigation Commads) ----------->
+        <article class="table">
+            <section class="helper-tb">
+                <div class="table-title">
+                    <h2>Helper Commands</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <!-- Helper headers -->
+                        <thead class="table-head">
+                            <tr>
+                                <th>Command</th>
+                                <th>What it does</th>
+                                <th>How to use it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Clear command -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >clear</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Clears the terminal</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Tab key -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div class="keyboard-button">
+                                        <p>tab</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Autocompletes the name of the file or directory</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                              <!-- Up and down arrow key -->
+                              <tr>
+                                <td>
+                                    <div class="keyboard-button">
+                                        <p>up icon</p>
+                                        <p>down icon</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Allows you to cycle through previous commands</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+        </article>
+        <!-- List Modifiers table -->
+        <article class="table">
+            <section class="list-tb">
+                <div class="table-title">
+                    <h2>List (<code class="command">ls</code>) modifiers</h2>
+                    <p>options</p>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <!-- -- List modifiers header -- -->
+                        <thead class="table-head">
+                            <tr>
+                                <th>Command</th>
+                                <th>What it does</th>
+                                <th>How to use it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- -- ls -a -- -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >ls -a</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Lists all contects of a directory, including hidden fules and directories</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- ls -l -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >ls -l</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Lists all content in long format</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- ls -t -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >ls -t</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>orders files and directories by the time they were last modified.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- ls -alt -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >ls -alt</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>You can use multiple options together.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+        </article>
+        <!-- Copy, move, remove  -->
+        <article class="table">
+            <section class="copy-tb">
+                <div class="table-title">
+                    <h2>Copy, Move, and Remove</h2>
+                </div>
+                <div class="table-container">
+                    <table >
+                        <!-- -- Copy, move, remove header -- -->
+                        <thead class="table-head">
+                            <tr>
+                                <th>Command</th>
+                                <th>What it does</th>
+                                <th>How to use it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <!-- -- Copy -- -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >cp</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Copies files.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- -- move -- -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >mv</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Moves and renames files.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                             <!-- -- remove -- -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >rm</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Removes files.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- -- remove dirctories -- -->
+                            <tr class="row-tint">
+                                <td>
+                                    <div>
+                                        <code class="command" >rm -r</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Removes directories.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >Example</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="wildcards">
+                                <td colspan="3">
+                                    <p>Wildcards are useful for selecting groups of files and directories</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </section>
+        </article> 
+       
+        <!-- ---- Redirecting Input and Output ---- -->
+        <article class="table">
+            <section class="table">
+                <div class="segment">
+                    <h2 >Redirecting</h2>
+                    <p>Through redirection you can direct the input and output of a command to and from other files and programs, and chain commands together in a pipeline.</p>
+                </div>
+            </section>
+            <section class="table">
+                <div class="table-title">
+                    <h2>Input and output (I/O) redirection</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <!-- -- Comment -- -->
+                        <thead class="table-head">
+                            <tr>
+                                <th>Command</th>
+                                <th>What it does</th>
+                                <th>How to use it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- -- Comment -- -->
+                            <tr>
+                                <td>
+                                    <div>
+                                        <code class="command" >echo</code>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>The command accepts strings as standard input, and echoes the string back to the terminal as standard output.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >$ echo "Hello"</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Standard input, standard output, and standard error -->
+                            <tr >
+                                <td colspan="3">
+                                    <p>Standard input, standard output, and standard error</p>
+                                </td>
+                            </tr>
+                            <tr class="row-tint">
+                                <td>
+                                    <p><em>standard input</em></p>
+                                </td>
+                                <td>
+                                    <p>Abbreviated as <code class="command">stdin</code>, is information inputted into the terminal through the keyboard or input device.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >$</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><em>standard output</em></p>
+                                </td>
+                                <td>
+                                    <p>Abbreviated as <code class="command">stdout</code>, is the information outputted after a process is run.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >$</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row-tint">
+                                <td>
+                                    <p><em>standard error</em></p>
+                                </td>
+                                <td>
+                                    <p>Abbreviated as <code class="command">stderr</code>, is an error message outputted by a failed process.</p>
+                                </td>
+                                <td>
+                                    <div>
+                                        <code class="command" >$</code>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"> 
+                                    <p>Redirection reroutes standard input, standard output, and standard error to or from a different location</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+        </article>    
+    </main>
+    <!-- SOURCES OF INFO -->
+    <footer>
+        <section class="sources">
+            <div>
+                <ul>
+                    <li>Codecademy</li>
+                    <li>Some Youtube videos</li>
+                </ul>
+                
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- COPY PASTE TABLES HERE
+
+
+ ---- THIS IS A COMMENT OF TABLE BEGINNING ----
+ <article class="table">
+    <div class="name-tb">
+        <div class="table-title">
+            <h2></h2>
+        </div>
+        <div class="table-container table">
+        <table>
+            -- Comment --
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>What it does</th>
+                    <th>Use example</th>
+                </tr>
+            </thead>
+            <tbody>
+                -- Comment --
+                <tr>
+                    <td>
+                        <div>
+                            <code class="command" >text</code>
+                        </div>
+                    </td>
+                    <td>
+                        <p>text</p>
+                    </td>
+                    <td>
+                        <div>
+                            <code class="command" >$</code>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</article>    
+-->
