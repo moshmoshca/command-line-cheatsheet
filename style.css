@@ -8,22 +8,29 @@ body {
 }
 
 /* Centering tables */
-.table, .navigation-tb, .helper-tb, .list-tb, .copy-tb {
+.table, 
+.navigation-tb, 
+.helper-tb, 
+.list-tb, 
+.copy-tb {
     width: 85%;
     margin: 0 auto;
     max-width: 900px;
 }
 
+.header-container {
+    margin-bottom: 90px;
+}
 
-/* Content styling */
 
-header {
+/* -------------Content styling------------------ */
+
+.header-info {
     text-align: center;
     padding: 100px;
     margin: 0 auto;
     background-color: #09091d;
     color: white;
-    margin-bottom: 50px;
 }
 
 .title {
@@ -40,6 +47,47 @@ header {
     letter-spacing: 0.4em;
 
     margin-bottom: 40px;
+}
+
+/* ---------- Navigation Menu fixed ------ */
+
+nav {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 20px;
+
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+   
+    margin: 20px;
+    /* gap: 0.8em; */
+
+    position: fixed;
+}
+
+.buttons li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.buttons li a {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border-style: none;
+    /* border: 1px solid #09091d; */
+    opacity: 0.8;
+
+    background-color: tomato;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-decoration: none;
 }
 
 .command {
@@ -93,6 +141,14 @@ td {
 
 /* Section Redirecting */
 
+.table .segment {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.table .segment h2 {
+    font-size: 35px;
+}
 
 /* Footer stuff */
 
@@ -101,4 +157,15 @@ td {
     padding: 20px;
     color: white;
     background-color: #09091d;
+}
+
+.sources-title {
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.sources li {
+    text-decoration: none;
+    list-style: none;
 }

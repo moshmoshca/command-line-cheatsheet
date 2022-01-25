@@ -10,16 +10,38 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="title">The Command Line</h1>
-            <p class="subtitle">Cheat Sheet</p>
-            <p class="summary">The <em>command line</em> is a text interface for the computer's operating system. To acces the command line, we use the terminal.</p>
+        <div class="header-container">
+            <div class="header-info">
+                <h1 class="title">The Command Line</h1>
+                <p class="subtitle">Cheat Sheet</p>
+                <p class="summary">The <em>command line</em> is a text interface for the computer's operating system. To acces the command line, we use the terminal.</p>
+            </div>
+            <nav>
+                <ul class="buttons">
+                    <li>
+                        <a href="#navigation">Navigation</a>
+                    </li>
+                    <li>
+                        <a href="#helper">Helper</a>
+                    </li>
+                    <li>
+                        <a href="#list">List</a>
+                    </li>
+                    <li>
+                        <a href="#copy">cp/mv/rm</a>
+                    </li>
+                    <li>
+                        <a href="#input-output">I/O</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        
     </header>
     <main>
         <!------------ First table (Navigation Commads) ----------->
         <article class="table">
-            <section class="navigation-tb">
+            <section id="navigation" class="navigation-tb">
                 <div class="table-title">
                     <h2>For navigation</h2>
                 </div>
@@ -122,7 +144,7 @@
         </article>
         <!------------ Helper commands (Navigation Commads) ----------->
         <article class="table">
-            <section class="helper-tb">
+            <section id="helper" class="helper-tb">
                 <div class="table-title">
                     <h2>Helper Commands</h2>
                 </div>
@@ -194,7 +216,7 @@
         </article>
         <!-- List Modifiers table -->
         <article class="table">
-            <section class="list-tb">
+            <section id="list" class="list-tb">
                 <div class="table-title">
                     <h2>List (<code class="command">ls</code>) modifiers</h2>
                     <p>options</p>
@@ -282,7 +304,7 @@
         </article>
         <!-- Copy, move, remove  -->
         <article class="table">
-            <section class="copy-tb">
+            <section id="copy" class="copy-tb">
                 <div class="table-title">
                     <h2>Copy, Move, and Remove</h2>
                 </div>
@@ -381,7 +403,7 @@
                     <p>Through redirection you can direct the input and output of a command to and from other files and programs, and chain commands together in a pipeline.</p>
                 </div>
             </section>
-            <section class="table">
+            <section id="input-output" class="table">
                 <div class="table-title">
                     <h2>Input and output (I/O) redirection</h2>
                 </div>
@@ -474,6 +496,7 @@
         <section class="sources">
             <div>
                 <ul>
+                    <li class="sources-title">Sources:</li>
                     <li>Codecademy</li>
                     <li>Some Youtube videos</li>
                 </ul>
